@@ -15,7 +15,7 @@ body, html {
 .cover-hero {
   position: relative;
   min-height: 100vh;
-  background: url("front-cover.jpeg") center/cover no-repeat;
+  background: url("assets/front-cover.jpeg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -88,4 +88,5 @@ body, html {
   font-size: 0.8rem;
 
 }
+
 
