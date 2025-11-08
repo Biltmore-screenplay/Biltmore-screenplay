@@ -1,0 +1,89 @@
+:root {
+  --accent: #c7892b; /* copper */
+  --accent-dark: #5c3a12;
+  --text: #fff;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Libre Baskerville", Georgia, serif;
+  background: #000;
+  color: var(--text);
+}
+
+.cover-hero {
+  position: relative;
+  min-height: 100vh;
+  background: url("assets/front-cover.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transform-origin: left center;
+  transition: transform 1s ease;
+}
+
+.cover-hero.flipping {
+  transform: rotateY(-90deg);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+}
+
+.cover-content {
+  position: relative;
+  z-index: 1;
+}
+
+.cover-content h1 {
+  font-size: 1rem;
+  letter-spacing: 0.2em;
+  margin-bottom: 8px;
+}
+
+.cover-content h2 {
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 1px solid var(--accent);
+  color: var(--text);
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background 0.3s;
+}
+.cta-button:hover {
+  background: var(--accent-dark);
+  border-color: var(--accent-dark);
+}
+
+.section {
+  min-height: 100vh;
+  background: #111;
+  padding: 60px 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.cover-footer {
+  text-align: center;
+  padding: 12px;
+  background: rgba(0,0,0,0.6);
+  font-size: 0.8rem;
+}
